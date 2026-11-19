@@ -119,6 +119,60 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &218260672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218260674}
+  - component: {fileID: 218260673}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &218260673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218260672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d058d6b9b1dd16d48857df3d6fbfad7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  assets: {fileID: 265422616}
+  jobRank: {fileID: 227262404}
+  connections: {fileID: 337050193}
+  amountToReach: 1000
+  amountToLose: 1000
+  innerValue: 50
+  innerValueWinAmount: 100
+  sceneToLoad: BadEnding
+  winScene: 
+  loseScene: BadEnding
+--- !u!4 &218260674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218260672}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.87828, y: 2.75525, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &227262402
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c08a9008378d34e92001cd6922f4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clickable
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 218260673}
   message: Your boss appreciates your efforts
   ObjectToIncrease: {fileID: 557839381}
   selectedText: 1
@@ -417,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c08a9008378d34e92001cd6922f4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clickable
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 218260673}
   message: You went to work
   ObjectToIncrease: {fileID: 1610079362}
   selectedText: 0
@@ -755,7 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c08a9008378d34e92001cd6922f4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clickable
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 218260673}
   message: 'You spent some time at a networking event
 
 '
@@ -2128,3 +2182,4 @@ SceneRoots:
   - {fileID: 1465917608}
   - {fileID: 1836168195}
   - {fileID: 1935948824}
+  - {fileID: 218260674}

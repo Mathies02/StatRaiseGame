@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/StatRaiseGame.unity
     guid: fc18ba256c5d31947acda8856899d7bb
+  - enabled: 1
+    path: Assets/BadEnding.unity
+    guid: f0794f621e1a8dc42ad0f7f3496e25ca
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
